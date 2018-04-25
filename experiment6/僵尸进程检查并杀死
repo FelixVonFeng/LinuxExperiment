@@ -1,0 +1,13 @@
+1用top查看系统中的僵尸进程情况
+    zombie是僵尸进程
+2再看看这些僵尸是什么程序来的
+ps -A -o stat,ppid,pid,cmd | grep -e '^[Zz]'
+因为状态为 z或者Z 的进程为僵尸进程，所以我们使用grep抓取stat状态为zZ进程
+3
+这里一共出现了6个僵死进程，我们需要把它们一个个都干掉，执行下面的命令
+
+4 kill -9 16092
+这样处理的速度有点慢，直接来个快速干掉所有僵尸进程的命令
+
+ps -A -o stat,ppid,pid,cmd | grep -e '^[Zz]' | awk '{print $2}' | xargs kill -9
+再查看，僵尸进程没有了！

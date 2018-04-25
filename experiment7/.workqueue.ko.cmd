@@ -1,0 +1,1 @@
+cmd_/home/jiabiao/linux/experiment7/workqueue.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/jiabiao/linux/experiment7/workqueue.ko /home/jiabiao/linux/experiment7/workqueue.o /home/jiabiao/linux/experiment7/workqueue.mod.o

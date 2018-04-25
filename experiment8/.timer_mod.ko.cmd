@@ -1,0 +1,1 @@
+cmd_/home/jiabiao/linux/experiment8/timer_mod.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/jiabiao/linux/experiment8/timer_mod.ko /home/jiabiao/linux/experiment8/timer_mod.o /home/jiabiao/linux/experiment8/timer_mod.mod.o

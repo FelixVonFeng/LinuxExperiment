@@ -1,0 +1,7 @@
+先超级用户
+在make
+再make install
+在/proc/desvices中找到test，记录设备号，这次是241
+再mknod /dev/test c 241 0
+
+再编译test.c 后执行即可

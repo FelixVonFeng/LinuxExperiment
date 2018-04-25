@@ -1,0 +1,1 @@
+cmd_/home/jiabiao/linux/experiment4/helloworld.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/jiabiao/linux/experiment4/helloworld.ko /home/jiabiao/linux/experiment4/helloworld.o /home/jiabiao/linux/experiment4/helloworld.mod.o

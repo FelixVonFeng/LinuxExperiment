@@ -1,0 +1,1 @@
+cmd_/home/jiabiao/linux/experiment9/chrdev_driver.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/jiabiao/linux/experiment9/chrdev_driver.ko /home/jiabiao/linux/experiment9/chrdev_driver.o /home/jiabiao/linux/experiment9/chrdev_driver.mod.o
